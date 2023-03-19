@@ -36,7 +36,6 @@ class App extends Component {
     const currentContacts = this.state.contacts;
     const prevContacts = prevState.contacts;
     if (currentContacts !== prevContacts) {
-      console.log('dobavili');
       localStorage.setItem('contacts', JSON.stringify(currentContacts));
     }
   }
